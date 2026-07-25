@@ -1,42 +1,28 @@
 import { rooms } from './data/rooms.js';
 
 export default function RoomsList() {
+  console.log("Rooms data:", rooms); // idi add chesa
+  
   return (
     <div style={{ padding: '20px' }}>
-      <h1 style={{ textAlign: 'center', marginBottom: '30px' }}>🏨 Available Rooms</h1>
+      <h1 style={{ textAlign: 'center' }}>🏨 Available Rooms</h1>
       
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px' }}>
-        {rooms.map(room => (
-          <div key={room.id} style={{ 
-            border: '1px solid #ddd', 
-            borderRadius: '12px', 
-            padding: '15px', 
-            boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
-            background: 'white'
-          }}>
-            <img 
-              src={room.image} 
-              alt={room.name} 
-              style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px' }} 
-            />
-            <h2 style={{ margin: '10px 0' }}>{room.name}</h2>
-            <p style={{ fontSize: '18px', fontWeight: 'bold', color: '#007bff' }}>₹{room.price}/night</p>
-            <p><b>Facilities:</b> {room.facilities.join(', ')}</p>
-            <button style={{ 
-              background: '#28a745', 
-              color: 'white', 
-              border: 'none', 
-              padding: '10px 20px', 
-              borderRadius: '5px', 
-              cursor: 'pointer',
-              width: '100%',
-              marginTop: '10px'
-            }}>
-              Book Now
-            </button>
-          </div>
-        ))}
-      </div>
+      <p>Total Rooms: {rooms.length}</p> 
+      
+      {rooms.length === 0 ? (
+        <p style={{color: 'red'}}>Rooms data ledu bro!</p>
+      ) : (
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px' }}>
+          {rooms.map(room => (
+            <div key={room.id} style={{ border: '1px solid #ddd', padding: '15px', borderRadius: '10px' }}>
+              <img src={room.image} alt={room.name} style={{ width: '100%', height: '200px' }} />
+              <h3>{room.name}</h3>
+              <p>₹{room.price}/night</p>
+              <p>{room.facilities.join(', ')}</p>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
