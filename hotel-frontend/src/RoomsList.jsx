@@ -11,7 +11,7 @@ function RoomsList() {
             <h2>{room.name}</h2>
             <p><b>Price:</b> ₹{room.price}/night</p>
             <p><b>Facilities:</b> {room.facilities.join(', ')}</p>
-            <button style={{ background: '#007bff', color: 'white', border: 'none', padding: '10px 20px', borderRadius: '5px' }}>
+            <button style={{ background: '#007bff', color: 'white', border: 'none', padding: '10px 20px', borderRadius: '5px', cursor: 'pointer' }}>
               Book Now
             </button>
           </div>
