@@ -2,9 +2,8 @@ export default function RoomsList() {
   const rooms = [
     {id: 1, name: "Deluxe Room", price: 3500, facilities: ["AC", "WiFi", "TV", "Geyser"], image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=400"},
     {id: 2, name: "Suite Room", price: 6500, facilities: ["AC", "WiFi", "Bathtub", "Balcony"], image: "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=400"},
-    {id: 3, name: "Standard Room", price: 2000, facilities: ["Fan", "WiFi", "TV"], image: "https://images.unsplash.com/photo-1582719478250-c89cae4aaec5?w=400"}
-  ];
-
+    {id: 3, name: "Standard Room", price: 2000, facilities: ["Fan", "WiFi", "TV"], image: "https://images.unsplash.com/photo-1560449723-aa90ba8a0ed3?w=400"},
+];
   return (
     <div style={{padding: '20px'}}>
       <h1 style={{textAlign: 'center'}}>🏨 Available Rooms</h1>
