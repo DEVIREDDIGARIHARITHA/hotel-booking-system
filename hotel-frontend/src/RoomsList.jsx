@@ -15,7 +15,11 @@ export default function RoomsList() {
             <h3>{room.name}</h3>
             <p><b>₹{room.price}/night</b></p>
             <p>{room.facilities.join(', ')}</p>
-            <button style={{background: 'green', color: 'white', padding: '10px', width: '100%'}}>Book Now</button>
+            <button style={{background: 'green', color: 'white', padding: '10px', width: '100%'}}
+            onClick={() => alert(`You selected ${room.name} for ₹${room.price}/night. Booking feature coming soon!`)}
+            >
+  Book Now
+</button>
           </div>
         ))}
       </div>
