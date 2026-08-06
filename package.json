@@ -1,0 +1,65 @@
+{
+  "name": "hotel-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://DEVIREDDIGARIHARITHA.github.io/hotel-booking-system/hotel-frontend",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "dependencies": {
+    "ci-info": "^3.9.0",
+    "es-shim-unscopables": "^1.1.0",
+    "es-to-primitive": "^1.3.4",
+    "escalade": "^3.2.0",
+    "escape-string-regexp": "^4.0.0",
+    "escodegen": "^2.1.0",
+    "eslint": "^8.57.1",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-import-resolver-node": "^0.3.10",
+    "eslint-module-utils": "^2.14.0",
+    "eslint-plugin-flowtype": "^8.0.3",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jest": "^25.7.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-testing-library": "^5.11.1",
+    "eslint-scope": "^7.2.2",
+    "eslint-visitor-keys": "^3.4.3",
+    "eslint-webpack-plugin": "^3.2.0",
+    "espree": "^9.6.1",
+    "esprima": "^4.0.1",
+    "esquery": "^1.7.0",
+    "esrecurse": "^4.3.0",
+    "estraverse": "^5.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
