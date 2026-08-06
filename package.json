@@ -2,7 +2,7 @@
   "name": "hotel-frontend",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://DEVIREDDIGARIHARITHA.github.io/hotel-booking-system/hotel-frontend",
+  "homepage":"https://devireddigariharitha.github.io/hotel-booking-system/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
